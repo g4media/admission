@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="initial-scale=1">
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+
+      background-image: url(school.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-attachment: fixed;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Add padding to containers */
+    .container {
+      padding: 16px;
+      background-color: white;
+    }
+
+    /* Full-width input fields */
+    input[type=text], input[type=password], input[type=number], input[type=email], input[type=roll], input[type=textbox] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit button */
+    .registerbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+      border-radius: 50px;
+      font-size: 50;
+      font-family: vampire wars;
+    }
+
+    .registerbtn:hover {
+      opacity: 1;
+      text-decoration-color: red ;
+      font-size: 25px;
+      font-weight: bolder;
+
+
+    }
+
+
+    .roll {
+      background-color: white;
+      color: green;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      opacity: 0.9;
+    }
+    .resetbtn {
+      background-color: red;
+      color: white;
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+      border-radius: 50px;
+      font-size: 50;
+      font-family: vampire wars;
+    }
+
+    .resetbtn:hover {
+      opacity: 1;
+      text-decoration-color: red ;
+      font-size: 25px;
+      font-weight: bolder;
+
+
+    }
+
+    .table {
+      background-color: white;
+
+      padding: 16px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: auto;
+      width: 100%;
+      opacity: 78%;
+      border-radius: 50px;
+      font-size: 50;
+
+    }
+
+    /* Add a blue text color to links */
+    a {
+      color: dodgerblue;
+    }
+
+    /* Set a grey background color and center the text of the "sign in" section */
+    .signin {
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+    </style>
+    <meta charset="utf-8">
+    <title>registration</title>
+  </head>
+  <body>
+    <form method="post" action="connect.php">
+  <table bgcolor="white" class="table" size="100%" align="center" left="center" right="center" top="center" bottom="center">
+    <tr>
+      <td colspan="2"><font size="5"><center><strong></b>Govt. Model Boys Higher Secondary School Haripad<br>Higher Secondary Allotment Crowd Management System</strong></center></font></td>
+    </tr>
+    <tr>
+      <td><h3>Name Of Student</h3></td>
+      <td><input size="70" type="text" name="name" placeholder="Enter student Name" required></td>
+    </tr>
+    <tr>
+      <td><h3>Address</h3></td>
+      <td><input size="70" type="textbox" name="address" placeholder="Enter the complete address of the Student each line seperated using commas(,)"></td>
+    </tr>
+    <tr>
+      <td>Contact Number</td>
+      <td><input size="70" type="number" name="contact" placeholder="enter your contact number"></td>
+    </tr>
+    <tr>
+      <td><h3>Name Of Parent</h3></td>
+      <td><input size="70" type="text" name="parent" placeholder="Enter Name of Parent"></td>
+    </tr>
+    <tr>
+		<td><h3>Allotment Number</h3></td>
+		<td><input size="70" type="text" name="allotno" placeholder="Enter Allotment Number"</td>
+    </tr>
+    <tr>
+		<td><h3>Enter a secret token id . You should remember this id as a token of your identity </h3></td>
+		<td><input size="70" type="password" name="token_id" placeholder="Enter Token Id"</td>
+    </tr>
+    <tr>
+      <td>Select Department</td>
+      <td>
+
+        <select name="class"placeholder="select" type="roll" class="roll">
+          <option value="bioscience-malayalam">Bio science Malayalam</option>
+          <option value="commerce">commerce</option>
+          <option value="humanities">humanities</option>
+          <option value="computerscience">Computer Science</option>
+          <option value="bioscience-hindi">Bio Science Hindi</options>
+      </td>
+    </tr>
+    <tr>
+      <td> <h3>Select Admission Type</h3> </td>
+      <td>
+
+          <select type='roll' name='adt'class="roll" >
+          <option value='Permenent'>Permenent</option>
+          <option value='Temporory'>Temporory</option>
+
+
+            </td>
+    </tr>
+    <tr>
+      <tr>
+        <td>Upload Photo of your Application</td>
+      <td><input type="file" accept="application/pdf" name="vid" placeholder="Application" class="roll"></td>
+      </tr>
+      <td><input type="reset" value="Reset Details" class="resetbtn"></td>
+      <td><input type="submit" value="R  e  g  i  s  t  e  r" class="registerbtn"></td>
+    </tr>
+  </table>
+  </form>
+  </body>
+</html>
