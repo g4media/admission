@@ -9,7 +9,7 @@ $class = filter_input(INPUT_POST, 'class');
 $adt = filter_input(INPUT_POST, 'adt');
 if (!empty($allotno)){
 if (!empty($token_id)){
-$host = "localhost";
+$host = "192.168.43.254";
 $dbusername = "root";
 $dbpassword = "";
 $dbname = "hssallot";
@@ -43,7 +43,7 @@ echo "Username should not be empty";
 die();
 }
 
-$host = "localhost";
+$host = "192.168.43.254";
 $dbusername = "root";
 $dbpassword = "";
 $dbname = "hssallot";
